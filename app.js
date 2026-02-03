@@ -1,0 +1,4 @@
+
+
+
+const idade = 22;
