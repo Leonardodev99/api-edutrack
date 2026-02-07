@@ -1,4 +1,3 @@
-
-
-
-const idade = 22;
+export default () => {
+  console.log('ola mundo!');
+};
