@@ -23,6 +23,7 @@ import classRoutes from './src/routes/classRoutes.js';
 import scheduleRoutes from './src/routes/scheduleRoutes.js';
 import attendanceRoutes from './src/routes/attendanceRoutes.js';
 import tokenRoutes from './src/routes/tokenRoutes.js';
+import passwordResetRoutes from './src/routes/passwordResetRoutes';
 
 
 
@@ -55,6 +56,7 @@ class App {
     this.app.use('/schedules', scheduleRoutes);
     this.app.use('/attendances', attendanceRoutes);
     this.app.use('/tokens', tokenRoutes);
+    this.app.use('/passwords', passwordResetRoutes);
 
   }
 }

@@ -72,6 +72,7 @@ class UserController {
 
       return res.json(users);
     } catch (error) {
+      console.log(error);
       return res.status(500).json({ error: 'Erro ao listar utilizadores' });
     }
   }
@@ -97,6 +98,7 @@ class UserController {
       return res.json(user);
 
     } catch (error) {
+      console.log(error);
       return res.status(500).json({
         error: 'Erro ao buscar utilizador'
       });
@@ -122,6 +124,7 @@ class UserController {
       return res.json(user);
 
     } catch (error) {
+      console.log(error);
       return res.status(500).json({
         error: 'Erro ao buscar perfil'
       });
@@ -189,6 +192,7 @@ class UserController {
 
       return res.json({ message: 'Utilizador removido com sucesso' });
     } catch (error) {
+      console.log(error);
       return res.status(500).json({ error: 'Erro ao remover utilizador' });
     }
   }
