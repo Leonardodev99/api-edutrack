@@ -86,7 +86,7 @@ class UserController {
       const { id } = req.params;
 
       const user = await User.findByPk(id, {
-        attributes: ['id', 'nome', 'email', 'tipo', 'ativo', 'created_at']
+        attributes: ['id', 'nome', 'email', 'tipo', 'ativo', 'createdAt']
       });
 
       if (!user) {
@@ -112,7 +112,7 @@ class UserController {
   async profile(req, res) {
     try {
       const user = await User.findByPk(req.userId, {
-        attributes: ['id', 'nome', 'email', 'tipo', 'ativo', 'created_at']
+        attributes: ['id', 'nome', 'email', 'tipo', 'ativo', 'createdAt']
       });
 
       if (!user) {
